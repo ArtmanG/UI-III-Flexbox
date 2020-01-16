@@ -49,7 +49,8 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	
 }
 
 html, body {
@@ -66,9 +67,12 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 /*----------------- UNIVERSAL ----------------------*/
+* {
+	/* border: 1px solid black; */
+}
 
 body {
-	margin: 0 10%
+	margin: 0 10%;
 }
 
 h2 {
@@ -81,92 +85,88 @@ p {
 }
 
 /*----------------- MAIN NAV ----------------------*/
-.navbar {
+/* this is for a fixed nav bar */
+/* .navbar {
 	overflow: hidden;
 	background-color: #23d3ff;
 	position: fixed;
 	top: 0;
-	width: 82%;
+	width: 82%;S
 	height: 7%;
 	border-bottom: 1px solid black;
 	border-bottom-left-radius: 30px;
 	border-bottom-right-radius: 30px;
 	z-index: 1;
 	margin-left: -1%;
-}
+} */
 
 .nav {
-	margin: .5% 0 0 4%;
-	padding: 1%;
-	position: relative;
+	display: flex;
+	margin: 2% 0 7%;
 }
 
 nav {
-	display: inline-block;
-	width: 75%;
-	position: absolute;
-	margin: .7% 0 0 0;
+	width: 80%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
 }
 
 nav a {
-	color: rgb(43, 43, 43);
+	color: rgb(172, 172, 172);
 	text-decoration: none;
-	width: 15%;
-	display: inline-block;
+	width: 20%;
 }
 
 nav a:hover {
-	color: rgb(255, 255, 255);
+	color: rgb(34, 34, 34);
 }
 
 .logo {
-	width: 17%;
-	margin: 0 0 5% 82%; 
+	width: 100%;
 }
 
 /*---------------------- HEADER ----------------------*/
 
 header {
-	margin: 10% 0 0 0;
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
 }
 
-.header {
-	position: relative;
-	width: 80%;
-}
 
 header div {
-	display: inline-block;
 	width: 40%;
+}
+
+.header-text {
+	width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 header h1 {
 	text-align: center;
-	font-size: 450%;
+	font-size: 500%;
 }
 
 header button {
-	display: inline-block;
-	text-align: center;
-	font-size: 115%;
+	font-size: 100%;
 	border: 1px solid black;
-	padding: 3% 10% 1%;
-	margin-left: 25%;
+	width: 30%;
 }
 
-.header-text {
-	margin: 5% 14% 5% 20%;
-	position: absolute;
+.button {
+	display: flex;
+	justify-content: center;
+	width: 100%;
 }
-
-.header-img {
-	margin: 0 0 5% 77%;
-}
-
 /*---------------------- LINES ----------------------*/
 
 .lines {
-	margin: 2% 0;
+	margin: 7% 0 5%;
 }
 
 .lines hr{
@@ -178,58 +178,43 @@ header button {
 /*---------------------- TOP-CONTENT ----------------------*/
 
 .top-content {
-	margin: 4% 0;
+	display: flex;
+	justify-content: space-between;
 }
 
 .top-content div {
-	display: inline-block;
 	width: 49%;
 }
 
-#features {
-	margin-right: 1%;
-}
+
 
 /*---------------------- MIDDLE IMAGE ----------------------*/
 
-.middle-image {
-	margin: 0 0 2%;
-}
-
 .middle-image img {
 	width: 100%;
+	margin: 5% 0;
 }
 
 /*---------------------- MORE-CONTENT ----------------------*/
 
 .more-content {
-	margin: 5% 0;
+	display: flex;
+	justify-content: space-between;
 }
 
 .more-content div {
-	display: inline-block;
+	
 	width: 32%;
-}
-
-#services {
-	margin-right: 1.5%;
-}
-
-#product {
-	margin-right: 1.5%;
 }
 
 
 /*---------------------- CONTACT ----------------------*/
 
-#contact {
-	margin: 5% 0;
-}
 
 /*---------------------- FOOTER ----------------------*/
 
 footer {
-	margin: 0 0 10%;
+	
 }
 footer p {
 	text-align: center;
