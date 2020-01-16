@@ -67,6 +67,7 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 /*----------------- UNIVERSAL ----------------------*/
+/* Only used to see boxes while designing. */
 * {
 	/* border: 1px solid black; */
 }
@@ -85,7 +86,7 @@ p {
 }
 
 /*----------------- MAIN NAV ----------------------*/
-/* this is for a fixed nav bar */
+/* this is for a fixed position nav bar */
 /* .navbar {
 	overflow: hidden;
 	background-color: #23d3ff;
@@ -101,12 +102,14 @@ p {
 } */
 
 .nav {
+	/* for the nav bar and the logo */
 	display: flex;
 	margin: 2% 0 7%;
 }
 
 nav {
 	width: 80%;
+	/* for the nav a elements individually */
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -130,11 +133,11 @@ nav a:hover {
 
 header {
 	width: 100%;
+	/* for both the text and the img */
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 }
-
 
 header div {
 	width: 40%;
@@ -142,6 +145,7 @@ header div {
 
 .header-text {
 	width: 70%;
+	/* for the text and the button, to get them into a column */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -152,17 +156,19 @@ header h1 {
 	font-size: 500%;
 }
 
+.button {
+	/* to get the button to be sized and positioned correctly */
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
 header button {
 	font-size: 100%;
 	border: 1px solid black;
 	width: 30%;
 }
 
-.button {
-	display: flex;
-	justify-content: center;
-	width: 100%;
-}
 /*---------------------- LINES ----------------------*/
 
 .lines {
@@ -174,10 +180,10 @@ header button {
 	border: .5px solid black;
 }
 
-
 /*---------------------- TOP-CONTENT ----------------------*/
 
 .top-content {
+	/* put them in a row and some spacing between (so easy to do this today) */
 	display: flex;
 	justify-content: space-between;
 }
@@ -185,8 +191,6 @@ header button {
 .top-content div {
 	width: 49%;
 }
-
-
 
 /*---------------------- MIDDLE IMAGE ----------------------*/
 
@@ -198,25 +202,22 @@ header button {
 /*---------------------- MORE-CONTENT ----------------------*/
 
 .more-content {
+	/* all three in a row and space between */
 	display: flex;
 	justify-content: space-between;
 }
 
 .more-content div {
-	
 	width: 32%;
 }
 
-
 /*---------------------- CONTACT ----------------------*/
-
+/* no longer needed due to flex-box */
 
 /*---------------------- FOOTER ----------------------*/
 
-footer {
-	
-}
 footer p {
 	text-align: center;
 	font-size: 100%;
+	margin: 7% 0 13%;
 }
