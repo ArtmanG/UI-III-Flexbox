@@ -123,19 +123,19 @@ nav a:hover {
 
 .banner-img img {
 	width: 100%;
-	margin: 2% 0;
+	margin: 2% 0 4%;
 }
 
 /*---------------------- HEADER ----------------------*/
 
 h1 {
-    font-size: 200%;
+    font-size: 250%;
 }
 
 /*---------------------- LINES ----------------------*/
 
 .lines {
-	margin: 6% 0 4%;
+	margin: 5% 0 4%;
 }
 
 .lines2 {
@@ -149,23 +149,65 @@ h1 {
 
 .lines2 hr{
 	color: black;
-	border: .5px solid black;
+	border: 1px solid black;
 }
 
 /*---------------------- SIX BOX SECTION ----------------------*/
 
 .six-boxes {
 	display: flex;
+	justify-content: space-between;
+}
+.columns {
+	width: 48%;
 }
 
-.columns div{
-	width: 90%;
-	margin: 0 4% 10%;
-}
-
-
-.border {
+.box {
     border: 1px solid black;
     padding: 5%;
-    background-color: rgb(230, 230, 230);
+	background-color: rgb(230, 230, 230);
+	margin-bottom: 10%;
+}
+
+.box p{
+	margin: 3% 0 5%;
+}
+
+.box button {
+	padding: 2% 12%;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+}
+
+.box button p {
+	font-size: 80%;
+}
+
+/*---------------------- BOTTOM CONTENT ----------------------*/
+
+.bottom-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.bottom-content div {
+	width: 48%;
+}
+
+.second-img {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.second-img img {
+ width: 100%;
+}
+
+
+/*---------------------- FOOTER ----------------------*/
+footer p {
+	font-size: 90%;
+	text-align: center;
+	margin: 10% 0 2%;
 }
