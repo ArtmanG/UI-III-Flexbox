@@ -176,11 +176,11 @@ header button {
 
 /*---------------------- LINES ----------------------*/
 
-.lines {
+.line {
 	margin: 7% 0 5%;
 }
 
-.lines hr{
+.line hr{
 	color: black;
 	border: .5px solid black;
 }
@@ -233,33 +233,121 @@ header button {
 
 /*----------------- NAV ----------------------*/
 
-
-.nav {
+.nav-services {
 	/* for the nav bar and the logo */
 	display: flex;
-	margin: 2% 0 7%;
+	margin: 2% 0 1%;
 }
 
-nav {
-	width: 80%;
-	/* for the nav a elements individually */
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-}
-
-nav a {
-	color: rgb(172, 172, 172);
-	text-decoration: none;
+.img-services {
 	width: 20%;
 }
 
-nav a:hover {
-	color: rgb(34, 34, 34);
-}
-
-.logo {
+.logo-services {
 	width: 100%;
 }
 
 /*---------------------- BANNER IMG ----------------------*/
+
+.banner-img img {
+	width: 100%;
+	margin: 2% 0 4%;
+}
+/*---------------------- HEADER ----------------------*/
+.services-header {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+#services-h1 h1 {
+	text-align: left;
+	font-size: 250%;
+	
+}
+
+/*---------------------- LINES ----------------------*/
+
+.lines {
+	margin: 5% 0 4%;
+}
+
+.lines2 {
+	margin: -2% 0 4%;
+}
+
+.lines hr{
+	color: black;
+	border: .5px solid black;
+}
+
+.lines2 hr{
+	color: black;
+	border: 1px solid black;
+}
+
+/*---------------------- SIX BOX SECTION ----------------------*/
+
+.six-boxes {
+	display: flex;
+	justify-content: space-between;
+}
+.columns {
+	width: 48%;
+}
+
+.box {
+    border: 1px solid black;
+    padding: 5%;
+	background-color: rgb(230, 230, 230);
+	margin-bottom: 10%;
+}
+
+.box p{
+	margin: 3% 0 5%;
+}
+
+.box button {
+	padding: 2% 12%;
+	border: 1px solid black;
+	border-radius: 5px;
+	background-color: rgb(255, 255, 255);
+}
+
+.box button p {
+	font-size: 80%;
+}
+
+/*---------------------- BOTTOM CONTENT ----------------------*/
+
+.bottom-content {
+	display: flex;
+	justify-content: space-between;
+}
+
+.bottom-content div {
+	width: 48%;
+}
+
+.second-img {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.second-img img {
+ width: 100%;
+}
+
+.bottom-content ul {
+	list-style-type: square;
+	padding: 4% 4% 0;
+	line-height: 1.7;
+	font-size: 110%;
+}
+
+/*---------------------- FOOTER ----------------------*/
+footer p {
+	font-size: 100%;
+	text-align: center;
+	margin: 10% 0 2%;
+}
