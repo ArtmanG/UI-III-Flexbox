@@ -115,6 +115,10 @@ nav a:hover {
 	color: rgb(34, 34, 34);
 }
 
+.img-services {
+	width: 20%;
+}
+
 .logo-services {
 	width: 100%;
 }
@@ -204,10 +208,17 @@ h1 {
  width: 100%;
 }
 
+.bottom-content ul {
+	list-style-type: square;
+	padding: 4% 4% 0;
+	line-height: 1.7;
+	font-size: 110%;
+}
+
 
 /*---------------------- FOOTER ----------------------*/
 footer p {
-	font-size: 90%;
+	font-size: 100%;
 	text-align: center;
 	margin: 10% 0 2%;
 }
